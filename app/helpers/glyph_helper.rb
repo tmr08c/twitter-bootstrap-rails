@@ -12,6 +12,6 @@ module GlyphHelper
     names.map! do |name|
       name =~ /pull-(?:left|right)/ ? name : "glyphicon glyphicon-#{name}"
     end
-    content_tag :i, nil, :class => names
+    content_tag :span, nil, :class => names
   end
 end
